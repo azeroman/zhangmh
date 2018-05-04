@@ -1,1 +1,1 @@
-﻿First learn git,explain why it's good!
+﻿First learn git,explain why it's good,this is first time modify!
