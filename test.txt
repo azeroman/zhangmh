@@ -1,1 +1,2 @@
 ﻿First learn git,explain why it's good,this is first time modify!
+This is second adding!
