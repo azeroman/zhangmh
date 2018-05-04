@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 第一个实例 - 明灯小站</title>
+<script src="vue.min.js"></script>
+</head>
+<body>
+<div id="app">
+	<ol>
+		<todfado-item> 	v-for="item in groceryList" 
+						v-bind:todo = "item" 
+						v-bind:key = "item.id">
+		</todfado-item>
+	<ol>
+</div>
+
+<script>
+Vue.component('todfado-item', {
+	props : ['todo'],
+	template : '<li> {{todo.text}}</li>'
+})
+
+var app = new Vue({
+	el : '#app',
+	data : {
+		groceryList : [
+			{id : 0, text : 'apple' },
+			{id : 1, text : 'orange'},
+			{id : 2, text : 'blueburry'},
+			{id : 3, text : 'cherry' }
+		]
+	}
+})
+
+</script>
+</body>
+</html>
